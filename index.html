@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Career Coach</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>AI Career Coach</h1>
+        <p>Get personalized career recommendations based on your profile.</p>
+    </header>
+
+    <main>
+        <section id="input-section">
+            <h2>Enter Your Details</h2>
+            <form id="career-form">
+                <label for="academic-performance">Academic Performance (e.g., GPA, major):</label>
+                <textarea id="academic-performance" name="academic-performance" rows="3" placeholder="Describe your academic background..."></textarea>
+
+                <label for="skills">Skills:</label>
+                <textarea id="skills" name="skills" rows="3" placeholder="List your technical and soft skills..."></textarea>
+
+                <label for="extracurricular">Extracurricular Activities:</label>
+                <textarea id="extracurricular" name="extracurricular" rows="3" placeholder="Describe your extracurricular activities..."></textarea>
+
+                <label for="interests">Personal Interests:</label>
+                <textarea id="interests" name="interests" rows="3" placeholder="What are your hobbies and interests?"></textarea>
+
+                <label for="resume">Upload Resume (optional):</label>
+                <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx,.txt">
+
+                <button type="submit">Get Recommendations</button>
+            </form>
+        </section>
+
+        <section id="results-section" style="display: none;">
+            <h2>Your Career Recommendations</h2>
+            <div id="recommendations"></div>
+            <div id="resume-feedback"></div>
+            <div id="upskilling"></div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
